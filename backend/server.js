@@ -8,7 +8,7 @@ import cartRouter from "./routes/cartRouter.js"
 import orderRouter from "./routes/orderRouter.js"
 
 const app =  express()
-const port = process.env.port || 4000
+const port = process.env.port || 10000
 
 app.use(express.json())
 app.use(cors())
