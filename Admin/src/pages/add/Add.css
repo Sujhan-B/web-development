@@ -1,0 +1,79 @@
+.add {
+    width: 70%;
+    margin-left: max(5vh, 25px);
+    margin-top: 50px;
+    color: #4a4a4a;
+    font-size: 16px;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.add:hover {
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+}
+
+.add form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.add-image-upload img {
+    width: 120px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.add-product-name,
+.add-product-description {
+    width: max(40%, 280px);
+}
+
+.add-product-name input,
+.add-product-description textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.add-product-name input:focus,
+.add-product-description textarea:focus {
+    border-color: #1c1370;
+}
+
+.add-catagory-price {
+    display: flex;
+    gap: 30px;
+}
+
+.add-catagory-price select,
+.add-catagory-price input {
+    max-width: 120px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+.add-button {
+    max-width: 140px;
+    border: none;
+    padding: 12px;
+    background-color: #c2bcfa;
+    color: #4a4a4a;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+    background-color: #8c80e7;
+}

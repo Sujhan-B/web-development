@@ -1,0 +1,68 @@
+.place-order{
+    margin-left: 7vw;
+    margin-right: 7vw;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 100px;
+}
+.place-order-left{
+    width: 100%;
+    max-width: max(30%,500px);
+}
+.place-order-left .title{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.place-order-left input{
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c5c5c5;
+    border-radius: 4px;
+    outline-color: #49558e;
+}
+.place-order-left .multi-feild{
+    display: flex;
+    gap: 10px;
+}
+.place-order-right {
+    width: 100%;
+    max-width: max(40%,500px);
+}
+.place-order .cart-total button{
+    margin-top: 20px;
+}
+.time-warning-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 180px;
+    justify-content: flex-start;
+  }
+  
+  /* Reserve space for warning text (even when hidden) */
+  .error-text {
+    height: 36px; /* approx 2 lines */
+    margin-top: 6px;
+    color: #d8000c;
+    background-color: #ffd2d2;
+    padding: 8px 12px;
+    border-left: 4px solid #d8000c;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  .error-text.hidden {
+    visibility: hidden;
+    opacity: 0;
+  }

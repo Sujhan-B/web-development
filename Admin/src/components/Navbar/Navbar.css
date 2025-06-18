@@ -1,0 +1,39 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 4%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border-bottom: 1px solid #e3e3e3;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: none;
+    box-shadow: none;
+}
+
+.navbar .logo {
+    width: clamp(80px, 20%, 150px);
+    object-fit: contain;
+}
+
+.navbar .profile {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.navbar .profile:hover {
+    transform: scale(1.05);
+}
+
+.main-wrapper, .layout, .header {
+    border-top: none;
+    border-bottom: none;
+    box-shadow: none;
+}

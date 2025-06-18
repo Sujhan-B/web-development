@@ -1,0 +1,106 @@
+.header {
+    height: 100vh; 
+    margin: 30px auto;
+    background: url('bg.png') no-repeat center;
+    background-size: cover; 
+    position: relative;
+    width: 90%;
+    border-radius: 20px;
+}
+
+.header-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem; 
+    max-width: 60%;
+    top: 15%;
+    left: 10%;
+    animation: fade 2s;
+}
+
+.header-content h2 {
+    color: white;
+    font-weight: 500;
+    font-size: clamp(30px, 6vw, 65px); 
+    line-height: 1.2;
+}
+
+.header-content p {
+    color: white;
+    font-size: clamp(14px, 2vw, 22px);
+    line-height: 1.5;
+}
+
+.header-content button {
+    border: none;
+    color: #313b71;
+    font-weight: 500;
+    padding: clamp(8px, 1vw, 15px) clamp(15px, 2.3vw, 30px);
+    background-color: white;
+    font-size: clamp(13px, 1vw, 16px);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.header-content button:hover {
+    background-color: #e0e0e0; 
+}
+
+@media (max-width: 1050px) {
+    .header {
+        height: 70vh;
+    }
+
+    .header-content {
+        max-width: 50%;
+        left: 8%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 60vh; 
+        background-size: cover; 
+        background-position: center bottom; 
+    }
+
+    .header-content {
+        max-width: 90%; 
+        top: 10%;
+        left: 5%;
+        gap: 1rem;
+    }
+
+    .header-content h2 {
+        margin-top: 0;
+    }
+
+    .header-content button {
+        padding: clamp(10px, 2vw, 12px) clamp(20px, 4vw, 25px); 
+        font-size: clamp(14px, 2.5vw, 16px);
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        height: 80vh;
+    }
+
+    .header-content {
+        max-width: 90%;
+        top: 5%;
+        left: 5%;
+        gap: 0.8rem;
+    }
+
+    .header-content h2 {
+        font-size: clamp(20px, 6vw, 32px); 
+    }
+
+    .header-content p {
+        font-size: clamp(12px, 3vw, 16px);
+    }
+}

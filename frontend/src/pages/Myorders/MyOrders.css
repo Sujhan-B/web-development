@@ -1,0 +1,107 @@
+.my-orders {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .my-orders h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .my-orders .container {
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .my-orders-order {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* allows wrapping on small screens */
+    padding: 20px 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    font-size: 14px;
+    color: #454545;
+    gap: 10px;
+  }
+  
+  .my-orders-order p span {
+    color: #454f82;
+  }
+  
+  .my-orders-order p b {
+    font-weight: 500;
+    color: #454f82;
+  }
+  
+  .my-orders-order img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+  
+  .my-orders-order button {
+    padding: 12px 0px;
+    background-color: #e1e3ff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #454545;
+    width: 150px;
+  }
+
+  .order-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.order-bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  padding-left: 60px; /* shift below the icon */
+  font-size: 15px;
+  color: #555;
+}
+  
+  /* Responsive styling for smaller devices */
+  @media (max-width: 768px) {
+    .my-orders-order {
+      flex-direction: column;
+      align-items: flex-start;
+      font-size: 13px;
+      padding: 15px 20px;
+    }
+  
+    .my-orders-order button {
+      align-self: stretch;
+      font-size: 12px;
+      width: 100%;
+    }
+  
+    .my-orders-order img {
+      margin-bottom: 10px;
+    }
+  }
+  
+  .delivarydate {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
