@@ -7,7 +7,7 @@ const StoreContextProvider = (props) => {
 
     const [cartItem, setCartItem] = useState({});
 
-    const url ="http://localhost:4000";
+    const url ="https://web-development-9hqf.onrender.com";
 
     const [token, setToken] = useState("");
 
