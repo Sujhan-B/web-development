@@ -29,4 +29,3 @@ app.listen(port,()=>{
     console.log(`server started on http://localhost:${port}`)
 })
 
-//mongodb+srv://electrofix:<db_password>@cluster0.fr0o304.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
